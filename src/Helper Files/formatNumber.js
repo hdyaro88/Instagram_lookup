@@ -3,10 +3,10 @@ export const formatNumber=(toFormat)=>{
         return  parseFloat(toFormat).toFixed(0)      
     }
     if(toFormat>999&&toFormat<=999999){
-        return parseFloat(toFormat/1000).toFixed(0)+"K"      
+        return parseFloat(toFormat/1000).toFixed(2)+"K"      
     }
     if(toFormat>999999){
-        return parseFloat(toFormat/1000000).toFixed(0)+"M"      
+        return parseFloat(toFormat/1000000).toFixed(2)+"M"      
     }
     else return toFormat
 }

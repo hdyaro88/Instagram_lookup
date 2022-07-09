@@ -18,7 +18,7 @@ const TextBlock = ({ label, value }) => {
         <span style={{ flexGrow: "1" }}>-</span>
         <Typography style={{ width: "60%" }}>{value}</Typography>
       </div>
-      <Divider style={{borderColor : "#ffffff"}} orientation="horizontal" />
+      <Divider style={{ borderColor: "#ffffff" }} orientation="horizontal" />
     </>
   );
 };
@@ -29,7 +29,8 @@ const UserInfo = ({ data }) => {
       <TextBlock label={"Username"} value={data?.username || "@username"} />
       <TextBlock label={"Full Name"} value={data?.full_name || "full_name"} />
       <TextBlock label={"Followers"} value={formatNumber(data?.follower_count || "0M")} />
-      <TextBlock label={"Following"} value={formatNumber(data?.following_count || "0K")} />
+      <TextBlock label={"Likes/Post"} value={formatNumber(data?.likes_per_post || "0K")} />
+      <TextBlock label={"Comments/Post"} value={formatNumber(data?.comments_per_post || "0K")} />
     </div>
   );
 };

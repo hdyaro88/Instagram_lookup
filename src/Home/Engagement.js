@@ -1,6 +1,7 @@
 import { Paper, Typography } from "@mui/material";
+import React from "react";
 import UserInfo from "./UserInfo";
-const Engagement = ({ data, engagement }) => {
+const Engagement = React.memo(({ data, engagement }) => {
   return (
     <Paper
       style={{
@@ -20,5 +21,5 @@ const Engagement = ({ data, engagement }) => {
       </Typography>
     </Paper>
   );
-};
+});
 export default Engagement;
