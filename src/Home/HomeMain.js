@@ -38,7 +38,7 @@ const HomeMain = () => {
         style={{ margin: "auto", maxWidth: "400px" }}
         value={query}
         InputProps={{
-          startAdornment: <AlternateEmailIcon />,
+          startAdornment: <h3>@</h3>,
           endAdornment: (
             <Button
               type="submit"
