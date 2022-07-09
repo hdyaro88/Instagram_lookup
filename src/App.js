@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useUtility } from "./Context";
+import Loader from "./Helper Files/Loader";
+import HomeMain from "./Home/HomeMain";
 function App() {
+  const { loader } = useUtility();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {loader.status && <Loader message={loader.message} />}
+      <HomeMain />
+    </>
   );
 }
 
