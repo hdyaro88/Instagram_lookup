@@ -13,3 +13,7 @@ https://instagram-lookup.herokuapp.com/
 
 
 # Steps to run on your local Machine
+1. Clone this repo
+2.  Open the folder in VsCode
+3.  In the Terminal run "npm install"
+4.  after that run "npm start"
